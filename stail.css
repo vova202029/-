@@ -1,0 +1,137 @@
+body {
+    background-color: #4800ff;
+    color: #1A1A1A;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    color: white;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 4rem;
+    user-select: none;
+}
+
+.left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side img {
+    width: 3.5em;
+}
+
+.left-side h2 {
+    font-size: 2.5rem;
+}
+
+.center ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+
+.center ul li {
+    transition: transform 0.2s ease-in-out;
+}
+
+.center ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.center ul li:hover {
+    transform: translateY(-2px);
+}
+
+.center ul li a:hover {
+    background-color: #5d00ff;
+    color: #ffff00;
+}
+
+.right-side button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.right-side button img {
+    width: 2.5rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.right-side button img:hover {
+    transform: scale(1.1);
+}
+
+.right-side button img:active {
+    transform: scale(0.9);
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px;
+    background-color: #f8f8f8;
+    border-radius: 24px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.about img {
+    max-width: 550px;
+    height: auto;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.336);
+    transition: transform 0.3s ease;
+}
+
+.about img:hover {
+    transform: translateY(-5px);
+}
+
+.text h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    position: relative;
+}
+
+.text h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #5d00ff;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+.text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4a4a4a;
+}
+
+.footer {
+    padding: 1rem 0;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+.footer p {
+    text-align: center;
+    line-height: 0.5rem;
+}
